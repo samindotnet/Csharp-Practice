@@ -26,3 +26,47 @@ Console.WriteLine(@"c:\invoices\app.exe -j");
     Use the \u plus a four-character code to represent Unicode characters (UTF-16) in a string.
     Unicode characters may not print correctly depending on the application.
 */
+
+//overloading the operator = reuse of one symbol for multiple purposes
+int firstNumber = 12;
+int secondNumber = 7;
+
+Console.WriteLine(firstNumber + secondNumber);
+
+string firstName = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold "+widgetsSold+" widgets.");
+
+//everything gets treated as a string
+string firstName = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold "+widgetsSold+7+" widgets.");
+
+//avoid performing both a calculation and concatenation in a single line of code
+string firstName = "Bob";
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold "+(widgetsSold+7)+" widgets.");
+
+/*
+
+    You can perform mathematical-like addition operations on numbers.
+    Both string concatenation and addition use the plus + symbol. This is called overloading an operator, and the compiler infers the proper use based on the data types it's operating on.
+    When it can, the C# compiler will implicitly convert an int into a string if it's obvious that the developer is trying to concatenate the string representation of a number for presentation purposes.
+    Use parentheses to define an order of operations to explicitly tell the compiler that you want to perform certain operations before other operations.
+
+*/
+
+/* + is the addition operator
+    - is the subtraction operator
+    * is the multiplication operator
+    / is the division operator
+        */
+int sum = 7 + 5;
+int difference = 7 -5;
+int product =  7 *5;
+int quotient = 7/5;
+
+Console.WriteLine("Sum: "+sum);
+Console.WriteLine("Difference: "+difference);
+Console.WriteLine("Product: "+product);
+Console.WriteLine("Quotient: "+quotient);
