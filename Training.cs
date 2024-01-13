@@ -70,3 +70,30 @@ Console.WriteLine("Sum: "+sum);
 Console.WriteLine("Difference: "+difference);
 Console.WriteLine("Product: "+product);
 Console.WriteLine("Quotient: "+quotient);
+
+//Casting - one type of data conversion that instructs the compiler to temporarily treat a value as if it were a different data type
+
+//The modulus operator % tells you the remainder of int division. 
+Console.WriteLine($"Modulus of 200 / 5: {200 % 5}");
+Console.WriteLine($"Modulus of 7 / 5: {7%5}");
+
+
+
+//increment and decrement operators
+value = value +1;
+Console.WriteLine("First increment: "+value);
+
+value +=1;
+Console.WriteLine("Second increment: "+value);
+
+value++;
+Console.WriteLine("Third increment: "+value);
+
+value = value - 1;
+Console.WriteLine("First decrement: "+value);
+
+value -= 1;
+Console.WriteLine("Second decrement: "+value);
+
+value--;
+Console.WriteLine("Third decrement: "+value);
